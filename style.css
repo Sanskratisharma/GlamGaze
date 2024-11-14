@@ -1,0 +1,491 @@
+:root{
+    --pink:#e84393;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top:6rem ;
+    overflow-x:hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #f4f1f1;
+    color: #0e0d0d;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:var(--pink);
+}
+
+ /* header styling*/
+
+header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:rgb(249, 16, 133);
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:black;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    color:rgb(10, 10, 10);
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:rgb(25, 24, 25);
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(#f4f1f1);
+}
+
+.Home{
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(bg2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ /* home section starts */
+
+.Home .content{
+    max-width: 50rem;
+}
+
+.Home .content h3{
+    font-size: 4rem;
+    color:#333;
+}
+
+.Home .content span{
+    font-size: 3.5rem;
+    color:var(--pink) ;
+    padding: 1rem 0;
+    line-height: 1.5;
+
+}
+
+.Home .content p{
+    font-size: 1.5rem;
+    color:var(#999) ;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+ /* icons styles */
+
+.icons-container{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-container .icons{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.3);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 35rem;
+}
+
+.icons-container .icons .img{
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons hr{
+    color: #333;
+    padding-bottom: 5rem;
+    font-size: 1.5rem;
+}
+
+ /* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    color: #333;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ff80bf;
+    margin-bottom: 20px;
+  }
+  
+ /* product details styling */
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 25%;
+    max-width: 300px;
+    padding: 15px;
+    border: 1px solid #ffc1e3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .product-name {
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: #ff4da6;
+  }
+  
+  .product-desc {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .product-price {
+    color: #b12704;
+    font-size: 1.1em;
+    margin-top: 10px;
+  }
+
+  .products .box-container.box.image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+    }
+    
+    
+    
+  .products .box-container .box.image img{
+ height:25rem;
+ transform: scale(1.1);
+    }
+
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contact Us section styles */
+#Contact-Us {
+    background: #fff;
+    padding: 3rem 9%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#Contact-Us:hover {
+    transform: scale(1.05);
+}
+
+#Contact-Us h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#Contact-Us p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #666;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#Contact-Us .social-icons a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #404040;
+    transition: color 0.3s ease-in-out;
+}
+
+#Contact-Us .social-icons a:hover {
+    color: #ff4081; /* Pink color on hover */
+
+}
+
+/* About Us section styles */
+#About-Us {
+    background: #fff;
+    padding: 3rem 9%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#About-Us:hover {
+    transform: scale(1.05);
+}
+
+#About-Us .about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#About-Us .text {
+    flex: 1;
+    margin-right: 2rem;
+
+}
+
+#About-Us .video {
+    flex: 1;
+    max-width: 700px;
+}
+
+#About-Us h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #f40679;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#About-Us p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #666;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Customer reviews section */
+#customer-reviews {
+    padding: 3rem 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#customer-reviews:hover {
+    transform: scale(1.02);
+}
+
+#customer-reviews h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Reviews row */
+.reviews-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.review-card {
+    background: #fffcf7;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+}
+
+.review-card:hover {
+    background: #ff4081;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.review-header .stars {
+    color: #ff4081;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.review-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Icons container styles */
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 5%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 1200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Icons styles */
+.icons {
+    text-align: center;
+    padding: 1.5rem;
+    flex: 1 1 200px;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #fffcf7;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.icons:hover {
+    background: #ff4081;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.icons .info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.icons .info span {
+    font-size: 1rem;
+    color: #666;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer styles */
+footer {
+    padding: 1rem 9%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+*{
+   margin:0 ;padding:0;
+    box-sizing:border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline:none ; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
